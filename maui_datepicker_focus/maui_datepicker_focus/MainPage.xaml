@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maui_datepicker_focus="clr-namespace:maui_datepicker_focus"
+             x:Class="maui_datepicker_focus.MainPage">
+
+       <VerticalStackLayout Spacing="10">
+
+       <DatePicker x:Name="datePickerVisible" />
+        <Button Clicked="Button_Clicked_1" Text="Open Visible DatePicker" />
+
+       <DatePicker IsVisible="False" x:Name="datePickerHidden" />
+        <Button Clicked="Button_Clicked_2" Text="Open Hidden DatePicker" />
+
+        <TimePicker x:Name="timeVisible" />
+        <Button Clicked="Button_Clicked_4" Text="Focus Visible TimePicker" />
+
+       <TimePicker IsVisible="False" x:Name="timeHidden" />
+        <Button Clicked="Button_Clicked_3" Text="Focus Hidden TimePicker" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
+
